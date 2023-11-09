@@ -1,0 +1,168 @@
+body{
+    background-image: url("mobile_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text_1{
+    background-image: url('text.gif');
+    font-family: 'Lobster';
+    font-size: 10px;
+    text-shadow: 0 0 10px white, 0 0 5px white;
+    font-weight: bold;
+    background-size: contain;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #57f527;
+    position:initial;
+    text-align:center;
+    font-size: large;
+    border: white;
+    display: none;
+}
+
+.video{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: #fa4a05;
+    font-weight: 20px;
+    font-family: 'Courier';
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin: 0;
+    top: 70%;
+    left: 40%;
+    right: 43%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.video:hover{
+    transition-duration: 0.3s;
+    background-color: bisque;
+    border-color: #fa4a05;
+    color: #fa4a05;
+    border:#fa4a05;
+    border-width: 10px;
+    font-family: 'Tahoma';
+    font-weight: bolder;
+}
+
+.hinhdim::before{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    color:lightcoral;
+    left: 12%;
+    top: 20%;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    content: "Hình dìm :>";
+}
+
+.hinhdim:hover::before{
+    background-image: url('hinhdim.jpg');
+    background-size: contain;
+    transition: 2s;
+    width: 88px;
+    height: 150px;
+    color:deeppink;
+    text-align: center;
+    transition-timing-function: ease-in-out;
+    font-weight: bolder;
+    content: "Hình đẹp nè :))))";
+    font-weight: bolder;
+}
+
+.qua::after{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background-color: blanchedalmond;
+    color: lightcoral;
+    border: none;
+    border-radius: 10px;
+    right: 12%;
+    top: 20%;
+    cursor: pointer;
+    content: "Hay là quà nhỉ";
+    font-weight: bold;
+}
+
+.qua:hover::after{
+    background-image: url('hinhdim2.jpg');
+    height: 150px;
+    transition: 2s;
+    background-size: contain;
+    color:brown;
+    content: "Chúc mừng xốp! Quà là hình dìm đó :3";
+    transition-timing-function: ease-in-out;
+    font-weight: bolder;
+}
+
+.button_play_content{
+    border-radius: 200px;
+    background-color:blanchedalmond;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-color: #fa4a05;
+    color: #fa4a05;
+    border-width: 3px;
+    font-weight: bold ;
+    top: 8%;
+    left: 36%;
+}
+
+@media only screen and (min-width: 750px){
+    body{
+        background-image: url("background.jpg");
+        background-size: cover;
+    }
+    .video{
+        width: 120px;
+        height: 38px;
+        font-weight: 40px;
+        top: 70%;
+        left: 44%;
+        right: 43%;
+        border-radius: 20px;
+    }
+    .qua::after{
+        width: 120px;
+        height: 35px;
+        border-radius: 10px;
+        right: 20%;
+        top: 28%;
+    }
+    .qua:hover::after{
+        height: 30%;
+        width: 11%
+    }
+    .hinhdim::before{
+        width: 120px;
+        height: 35px;
+        left: 20%;
+        top: 28%;
+    }
+    .hinhdim:hover::before{
+        height: 30%;
+        width: 9.66%
+    }
+    .button_play_content{
+        border-radius: 200px;
+        background-color:blanchedalmond;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-color: #fa4a05;
+        color: #fa4a05;
+        border-width: 3px;
+        font-weight: bold ;
+        top: 14%;
+        left: 44.5%;
+    }
+}   
