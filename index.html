@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script>
+            let audio = new Audio("yume_to_harazuka.mp3");
+            let play = false;
+            audio.loop = true;
+            function playMusic(){
+                play = !play;
+                if (play)
+                    audio.play();
+                else
+                    audio.pause();
+            }
+        </script>
+
+        <button class = "text_1" style="height: 50px; width: 500; transition-delay: 2s;">
+        CHÚC MỪNG SINH NHẬT
+        </button>
+
+        <button class = "hinhdim" ></button>
+
+        <button class = "qua" ></button>
+
+        <button class = "button_play_content" style = "position: absolute;" onclick = playMusic()>Phát/Dừng</button>
+
+        <a href = "https://drive.google.com/file/d/1gC4Q4JQcMlMm24fQvf-L_ILGBuHOt19q/view?usp=drive_link" target = "_blank">
+            <button class="video" style = "position: absolute;">
+            VIDEO
+            </button>
+        </a>
+    </body>
+</html>
